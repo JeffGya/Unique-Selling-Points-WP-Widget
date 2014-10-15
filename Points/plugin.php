@@ -3,19 +3,18 @@
  * This plugin/widget is based of the WPbeginner custom widget tutorial: http://www.wpbeginner.com/wp-tutorials/how-to-create-a-custom-wordpress-widget/
  * 
  * @package   point_widget
- * @author    Jeffrey Gyamfi <Jeffrey@overstappen.nl>
- * @link      http://example.com
- * @copyright 2014 Overstappen.nl
+ * @author    Jeffrey Gyamfi <Jeffrey@jgyamfi.nl>
+ * @link      jgyamfi.nl
  *
  * @wordpress-plugin
- * Plugin Name:       Points without button
+ * Plugin Name:       Points
  * Plugin URI:        #
  * Description:       Unique selling points & customer service widget.  
- * Version:           1.2.0
+ * Version:           1.0.0
  * Author:            Jeffrey Gyamfi
  * Author URI:        jgyamfi.nl
  * Text Domain:       point_widget
- * GitHub Plugin URI: https://github.com/<owner>/<repo>
+ * GitHub Plugin URI: https://github.com/JeffGya/Unique-Selling-Points-WP-Widget
 */
 
 /* Start Adding Functions Below this Line */
