@@ -87,7 +87,7 @@ class point_widget extends WP_Widget {
 		( isset( $instance[ 'sellingpoint4'] ) ) ? $sellingpoint4 = $instance['sellingpoint4'] : $sellingpoint4 = __( 'Nooit zonder gas en licht', 'point_widget_domain' );
 		( isset( $instance[ 'sellingpoint5'] ) ) ? $sellingpoint5 = $instance['sellingpoint5'] : $sellingpoint5 = __( 'Bespaar tot €434', 'point_widget_domain' );
 		( isset( $instance[ 'sellingpoint6'] ) ) ? $sellingpoint6 = $instance['sellingpoint6'] : $sellingpoint6 = __( '14 dagen bedenktijd', 'point_widget_domain' );
-		( isset( $instance[ 'number'] ) ) ? $number = $instance['number'] : $number = __( '020 – 531 76 70', 'point_widget_domain' );
+		( isset( $instance[ 'number'] ) ) ? $number = $instance['number'] : $number = __( '123 – 456 78 90', 'point_widget_domain' );
 
 		// Widget admin form
 		?>
