@@ -58,7 +58,7 @@ class point_widget extends WP_Widget {
 		?> 
 
 		<div id="sellingPoints">
-			<div id="points">
+			<div class="<?php if ( empty($sellingpoint1) && empty($sellingpoint2) && empty($sellingpoint3) && empty($sellingpoint4) && empty($sellingpoint5) && empty($sellingpoint6) ) echo 'no-display' ?>" id="points">
 				<ul>
 					<li class="<?php if ( empty( $sellingpoint1 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint1 ?></p></li>
 					<li class="<?php if ( empty( $sellingpoint2 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint2 ?></p></li>
