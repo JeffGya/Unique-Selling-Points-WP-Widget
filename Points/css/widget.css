@@ -1,6 +1,6 @@
 /* This stylesheet is used to style the public view of the widget. */
-#widget-titel{
-	font-size: 2em;
+.no-display{
+	display: none;
 }
 
 #points {
@@ -12,20 +12,25 @@
 	border-radius: 4px;
 }
 
-	#points ul li {
-		padding: 4px 0px 5px 0px;
-		margin: 10px 0px;
-		font-size: 1.3em;
-		list-style: none;
+	#points ul li{
 		border: none;
-		color: white;
-		line-height: 1em;
+		margin: 10px 0px;
 	}
 
-		#points ul li img {
-			margin-right: 5px;
+		#points ul li p {
+			padding: 4px 0px 5px 0px;
+			margin: 0;
+			font-size: 1.3em;
+			list-style: none;
 			border: none;
+			color: white;
+			line-height: 1em;
 		}
+			#points ul li img {
+				margin-right: 5px;
+				border: none;
+				float: left;
+			}
 
 #serviceContact {
 	background-color: #16a6de;
