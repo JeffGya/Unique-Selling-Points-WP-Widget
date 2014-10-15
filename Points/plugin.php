@@ -60,15 +60,15 @@ class point_widget extends WP_Widget {
 		<div id="sellingPoints">
 			<div id="points">
 				<ul>
-					<li><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint1 ?></li>
-					<li><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint2 ?></li>
-					<li><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint3 ?></li>
-					<li><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint4 ?></li>
-					<li><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint5 ?></li>
-					<li><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint6 ?></li>
+					<li class="<?php if ( empty( $sellingpoint1 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint1 ?></p></li>
+					<li class="<?php if ( empty( $sellingpoint2 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint2 ?></p></li>
+					<li class="<?php if ( empty( $sellingpoint3 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint3 ?></p></li>
+					<li class="<?php if ( empty( $sellingpoint4 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint4 ?></p></li>
+					<li class="<?php if ( empty( $sellingpoint5 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint5 ?></p></li>
+					<li class="<?php if ( empty( $sellingpoint6 ) ) echo 'no-display' ?>" ><p><img src="<?php echo plugins_url( 'points/images/glyphicons_206_ok_2.png');?>" alt="checkmark"><?php echo $sellingpoint6 ?></p></li>
 				</ul>
 			</div>
-			<div id="serviceContact">
+			<div class="<?php if ( empty( $number ) ) echo 'no-display' ?>" id="serviceContact">
 				<p>Klantenservice:</p>
 				<p id="number"><?php echo $number ?></p>
 			</div>
@@ -87,7 +87,7 @@ class point_widget extends WP_Widget {
 		( isset( $instance[ 'sellingpoint4'] ) ) ? $sellingpoint4 = $instance['sellingpoint4'] : $sellingpoint4 = __( 'Nooit zonder gas en licht', 'point_widget_domain' );
 		( isset( $instance[ 'sellingpoint5'] ) ) ? $sellingpoint5 = $instance['sellingpoint5'] : $sellingpoint5 = __( 'Bespaar tot €434', 'point_widget_domain' );
 		( isset( $instance[ 'sellingpoint6'] ) ) ? $sellingpoint6 = $instance['sellingpoint6'] : $sellingpoint6 = __( '14 dagen bedenktijd', 'point_widget_domain' );
-		( isset( $instance[ 'number'] ) ) ? $number = $instance['number'] : $number = __( '123 – 456 78 90', 'point_widget_domain' );
+		( isset( $instance[ 'number'] ) ) ? $number = $instance['number'] : $number = __( '020 – 531 76 70', 'point_widget_domain' );
 
 		// Widget admin form
 		?>
